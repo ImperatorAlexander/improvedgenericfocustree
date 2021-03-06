@@ -1,0 +1,798 @@
+add_namespace = generic_focus_war_event
+
+#Declare Imperial War
+country_event = {
+	id = generic_focus_war_event.1
+	title = generic_focus_war_event.1.t
+	desc = generic_focus_war_event.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = generic_focus_war_event.1.a
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = { 
+			FROM = { 
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.2 hours = 6 } }
+		}
+	}
+
+}
+
+#Accepted war (only option)
+country_event = {
+	id = generic_focus_war_event.2
+	title = generic_focus_war_event.2.t
+	desc = generic_focus_war_event.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = generic_focus_war_event.2.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+	}
+}
+
+#Lebensraum war
+country_event = {
+	id = generic_focus_war_event.3
+	title = generic_focus_war_event.3.t 
+	desc = generic_focus_war_event.3.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.3.a 
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = { 
+			FROM = { 
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.4 hours = 6 } }
+		}
+	}
+}
+
+#Accepted War (only option)
+country_event = {
+	id = generic_focus_war_event.4
+	title = generic_focus_war_event.4.t 
+	desc = generic_focus_war_event.4.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.4.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+	}
+}
+
+#True Enemy War
+country_event = {
+	id = generic_focus_war_event.5
+	title = generic_focus_war_event.5.t 
+	desc = generic_focus_war_event.5.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.5.a 
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = { 
+			FROM = { 
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.6 hours = 6 } }
+		}
+	}
+}
+
+#War accepted (only option)
+country_event = {
+	id = generic_focus_war_event.6
+	title = generic_focus_war_event.6.t 
+	desc = generic_focus_war_event.6.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.6.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+	}
+}
+
+#Neo-Colonial War
+country_event = {
+	id = generic_focus_war_event.7
+	title = generic_focus_war_event.7.t 
+	desc = generic_focus_war_event.7.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.7.a 
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = { 
+			FROM = { 
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.8 hours = 6 } }
+		}
+	}
+}
+
+#Colonial Defiance (only option)
+country_event = {
+	id = generic_focus_war_event.8
+	title = generic_focus_war_event.8.t 
+	desc = generic_focus_war_event.8.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.8.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+	}
+}
+
+#True Revolution War
+country_event = {
+	id = generic_focus_war_event.9
+	title = generic_focus_war_event.9.t 
+	desc = generic_focus_war_event.9.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.9.a 
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = { 
+			FROM = { 
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.10 hours = 6 } }
+		}
+	}
+}
+
+#TR Response (always negative)
+country_event = {
+	id = generic_focus_war_event.10
+	title = generic_focus_war_event.10.t 
+	desc = generic_focus_war_event.10.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.10.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+	}
+}
+
+#Protective Imperialism, AI will always accept.
+country_event = {
+	id = generic_focus_war_event.11
+	title = generic_focus_war_event.11.t
+	desc = generic_focus_war_event.11.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #sure
+		name = generic_focus_war_event.11.a
+		ai_chance = {
+			factor = 30
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.12 hours = 6 } }
+		}
+	}
+
+	option = { #no
+		name = generic_focus_war_event.11.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.13 hours = 6 } }	
+		}
+	}
+}
+
+#Accepted Protective Imperialism
+country_event = {
+	id = generic_focus_war_event.12
+	title = generic_focus_war_event.12.t 
+	desc = generic_focus_war_event.12.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.12.a
+		ai_chance = {
+			factor = 1
+		}
+		puppet = FROM
+	}
+}
+
+#Turned Down Protective Imperialism
+country_event = {
+	id = generic_focus_war_event.13
+	title = generic_focus_war_event.13.t 
+	desc = generic_focus_war_event.13.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.13.a 
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Revise the Revisionists
+country_event = {
+	id = generic_focus_war_event.14
+	title = generic_focus_war_event.14.t 
+	desc = generic_focus_war_event.14.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.14.a 
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = { 
+			FROM = { 
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ROOT
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.15 hours = 6 } }
+		}
+	}
+}
+
+#Resist the Revision
+country_event = {
+	id = generic_focus_war_event.15
+	title = generic_focus_war_event.15.t 
+	desc = generic_focus_war_event.15.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.15.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FROM
+			}
+		}
+	}
+}
+
+#Foreign Enterprises
+country_event = {
+	id = generic_focus_war_event.16
+	title = generic_focus_war_event.16.t 
+	desc = generic_focus_war_event.16.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #Of course
+		name = generic_focus_war_event.16.a 
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = ROOT
+					value > 25
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = ROOT
+					value > 75
+				}
+			}
+			modifier = {
+				add = 20
+				has_government = democratic
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.17 hours = 6 } }
+		}
+	}
+	option = { #No thanks
+		name = generic_focus_war_event.16.b
+		ai_chance = {
+			base = 5
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = ROOT
+					value < -10
+				}
+			}
+			modifier = {
+				add = 30
+				has_war = yes
+			}
+			modifier = {
+				add = 50
+				has_opinion = {
+					target = ROOT
+					value < -75
+				}
+			}
+			modifier = {
+				add = 30
+				has_government = fascism
+			}
+			modifier = {
+				add = 10
+				has_government = communism
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.18 hours = 6 } }
+		}
+	}
+}
+
+#Accepted offer
+country_event = {
+	id = generic_focus_war_event.17
+	title = generic_focus_war_event.17.t 
+	desc = generic_focus_war_event.17.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #Yayz
+		name = generic_focus_war_event.17.a 
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = { 
+			set_country_flag = recieved_investment_@FROM
+			if = {
+				limit = {
+					has_idea = foreign_enterprise1
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise1
+					add_idea = foreign_enterprise2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = foreign_enterprise2
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise2
+					add_idea = foreign_enterprise3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = foreign_enterprise3
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise3
+					add_idea = foreign_enterprise4
+				}
+			}
+			else = {
+				add_ideas = foreign_enterprise1
+			}
+		}
+		FROM = {
+			add_ideas = financing_industrialization
+		}
+	}
+}
+
+#Rejected Offer
+country_event = { 
+	id = generic_focus_war_event.18
+	title = generic_focus_war_event.18.t 
+	desc = generic_focus_war_event.18.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #worth a shot
+		name = generic_focus_war_event.18.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Nationalize all the things
+country_event = {
+	id = generic_focus_war_event.19
+	title = generic_focus_war_event.19.t 
+	desc = generic_focus_war_event.19.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #Take it!
+		name = generic_focus_war_event.19.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = {
+			if = {
+				limit = {
+					has_idea = foreign_enterprise1
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise1
+					add_idea = state_enterprise1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = foreign_enterprise2
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise2
+					add_idea = state_enterprise2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = foreign_enterprise3
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise3
+					add_idea = state_enterprise3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = foreign_enterprise4
+				}
+				swap_ideas = {
+					remove_idea = foreign_enterprise4
+					add_idea = state_enterprise4
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = recieved_investment_USA
+				}
+				USA = { country_event = { id = generic_focus_war_event.20 hours = 6 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = recieved_investment_GER
+				}
+				GER = { country_event = { id = generic_focus_war_event.20 hours = 6 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = recieved_investment_FRA
+				}
+				FRA = { country_event = { id = generic_focus_war_event.20 hours = 6 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = recieved_investment_ENG
+				}
+				ENG = { country_event = { id = generic_focus_war_event.20 hours = 6 } }
+			}
+		}
+	}
+}
+
+#My stuff!
+country_event = {
+	id = generic_focus_war_event.20
+	title = generic_focus_war_event.20.t 
+	desc = generic_focus_war_event.20.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #Oh well
+		name = generic_focus_war_event.20.a 
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = {
+			remove_ideas = financing_industrialization
+			add_timed_idea = {
+				idea = lost_enterprises
+				days = 360
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = nationalized_enterprise1
+				}
+				remove_ideas = nationalized_enterprise1
+				add_timed_idea = {
+					idea = nationalized_enterprise2
+					days = 360
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = nationalized_enterprise2
+				}
+				remove_ideas = nationalized_enterprise2
+				add_timed_idea = {
+					idea = nationalized_enterprise3
+					days = 360
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = nationalized_enterprise3
+				}
+				remove_ideas = nationalized_enterprise3
+				add_timed_idea = {
+					idea = nationalized_enterprise4
+					days = 360
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = nationalized_enterprise1
+					days = 360
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = { country_event = { id = generic_focus_war_event.15 hours = 6 } }
+		}
+	}
+	option = { #Don't touch my stuff, player only
+		name = generic_focus_war_event.20.b
+		ai_chance = {
+			factor = 0
+		}
+		FROM = { country_event = { id = generic_focus_war_event.22 hours = 6 } }	
+		ROOT = { add_political_power = -200 }
+	}
+}
+
+#Excellent
+country_event = {
+	id = generic_focus_war_event.21
+	title = generic_focus_war_event.21.t 
+	desc = generic_focus_war_event.21.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.21.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Uh oh
+country_event = {
+	id = generic_focus_war_event.22
+	title = generic_focus_war_event.22.t
+	desc = generic_focus_war_event.22.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { #AI will always back down
+		name = generic_focus_war_event.11.a
+		ai_chance = {
+			factor = 30
+		}
+		FROM = { country_event = { id = generic_focus_war_event.23 hours = 6 } }
+	}
+
+	option = { #No, I really want a war over -5% consumer goods
+		name = generic_focus_war_event.11.b
+		ai_chance = {
+			factor = 0
+		}
+		FROM = { country_event = { id = generic_focus_war_event.24 hours = 6 } }
+	}
+}
+
+#Backed down
+country_event = {
+	id = generic_focus_war_event.23
+	title = generic_focus_war_event.23.t 
+	desc = generic_focus_war_event.23.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.23.a
+		ai_chance = {
+			factor = 1
+		}
+		ROOT = {
+			remove_ideas = financing_industrialization
+		}
+	}
+}
+
+#We also really want war over 5% consumer goods
+country_event = {
+	id = generic_focus_war_event.24
+	title = generic_focus_war_event.24.t 
+	desc = generic_focus_war_event.24.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = generic_focus_war_event.24.a 
+		ai_chance = {
+			factor = 0
+		}
+		ROOT = {
+			remove_ideas = financing_industrialization
+			add_timed_idea = {
+				idea = lost_enterprises
+				days = 360
+			}
+			create_wargoal = {
+			type = topple_government
+			target = FROM
+		}
+		FROM = {
+			if = {
+				limit = {
+					has_idea = nationalized_enterprise1
+				}
+				remove_ideas = nationalized_enterprise1
+				add_timed_idea = {
+					idea = nationalized_enterprise2
+					days = 360
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = nationalized_enterprise2
+				}
+				remove_ideas = nationalized_enterprise2
+				add_timed_idea = {
+					idea = nationalized_enterprise3
+					days = 360
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = nationalized_enterprise3
+				}
+				remove_ideas = nationalized_enterprise3
+				add_timed_idea = {
+					idea = nationalized_enterprise4
+					days = 360
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = nationalized_enterprise1
+					days = 360
+				}
+			}
+		}
+	}
+}
